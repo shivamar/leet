@@ -10,7 +10,7 @@ solution: generate the next permuation and keep doing it until you reach Mth per
 */
 class PermuationSequence
 {
-	    
+	    //TLE
     public static String getPermutation(int n, int k) throws Exception {
         int N = n;
 		// your code goes here
@@ -28,14 +28,14 @@ class PermuationSequence
     }
 	public static void main (String[] args) throws java.lang.Exception
 	{	
-		int N = 8;
+		int N = 10;
 		// your code goes here
 		int[] arr = new int[N];
 		for(int i = 0 ; i < N ; i++){
-			arr[i] = i+1;
+			arr[i] = i;
 		}
 		
-		int M = 8590; //(less than N!)
+		int M = 1000000; //(less than N!)
 		
 		int[] res = printMthPermutation(arr,M);
 		
