@@ -1,4 +1,5 @@
 public class AddDigits {
+	//39 = 3+9=12 = 1+2 =3
     public int addDigits(int num) {
         if(num < 10) return num;
         
