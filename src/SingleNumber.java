@@ -13,6 +13,9 @@ public class SingleNumber
 		int[] a = {2,3,2,1,4,1,4};
 		System.out.println(singleNumber(a));
 		
+		int b = 7;
+				
+		System.out.println(Integer.toBinaryString(~b));		
 	}
 	
 	public static int singleNumber(int[] nums) {
