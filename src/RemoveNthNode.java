@@ -12,6 +12,13 @@ For example,
 
 public class RemoveNthNode {
 	
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+}
+	
 	/**
 	 * Definition for singly-linked list.
 	 * public class ListNode {
@@ -49,8 +56,3 @@ public class RemoveNthNode {
 }
 
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
