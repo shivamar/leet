@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class ChessBoardNavigation {
 		
+	/*
+	 * Given a source 0,0 and N,N of a chess board size N
+	 * Find the min distance for the knight from source to destination
+	 */
 	public static int findMinDistance(Integer[] source,Integer[] destination,int[][] board,int[][] visitedVector,ArrayList<Integer[]> blocked){
 		if(Arrays.equals(source,destination)) {
 			visitedVector[source[0]][source[1]] = 1;
@@ -108,7 +112,12 @@ public class ChessBoardNavigation {
 		// visited matrix with all 0s	
 		Integer[] s = {0,0};
 		Integer[] b = {len-1,len-1};
-		int ans = findMinDistance(s,b,board,vis,new ArrayList<Integer[]>());
+		
+		ArrayList<Integer[]>blocked = new ArrayList<Integer[]>();
+		Integer[] e = {0,2};		
+		blocked.add(e);
+		
+		int ans = findMinDistance(s,b,board,vis,blocked);
 		
 		printSolution(board);
 		
