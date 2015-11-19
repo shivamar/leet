@@ -11,6 +11,12 @@ public class LongestSubstringPalindrome {
 		//odd palindrome		
 		for(int i=0; i < len; i++)
 		{
+
+		    //super optimization - string size - 100 and if longest is 50 and if i is at 80, 
+			//len-i is 20 and longest possible palindrome at i=80 is only 2 (len-i) = 40 
+			//so stop iterating any more.
+		    if(longestPalindrome.length()  >= 2 * (len - i)) return longestPalindrome;
+		    
 			l = i==0 ? 0 : i-1;
 			r = i== len-1 ? len-1 : i + 1;
 			
