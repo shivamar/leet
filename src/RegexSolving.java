@@ -1,4 +1,4 @@
-public class Solution {
+public class RegexSolving {
     public boolean isMatch(String s, String p) {
         int pptr=0,sptr=0;
         
