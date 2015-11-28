@@ -15,6 +15,8 @@ Consider the following matrix:
 Given target = 3, return true.
 */
 public class Search2DMatrix {
+	// do a binary search and convert the mid number to matrix format col,row using a function
+	//log(n) - complexity
     public boolean searchMatrix(int[][] matrix, int target) {
         int M = matrix.length;
         int N = matrix[0].length;
