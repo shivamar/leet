@@ -8,7 +8,7 @@
 public class isSinglyListPalindrome {
     /*
     get the slow pointer at the midpoint and reverse the first half od list until the slow pointer
-    keep checking the head and slo pointer moving thru the list until head reaches mid point
+    keep checking the head and slow pointer moving thru the list until head reaches mid point
     1,2,3,3,2,1
     becomes 3,2,1,3,2,1
     */
