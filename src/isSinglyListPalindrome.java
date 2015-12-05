@@ -5,7 +5,7 @@
       ListNode(int x) { val = x; }
   }
  
-public class ReverseASinglyPalindrome {
+public class isSinglyListPalindrome {
     /*
     get the slow pointer at the midpoint and reverse the first half od list until the slow pointer
     keep checking the head and slo pointer moving thru the list until head reaches mid point
