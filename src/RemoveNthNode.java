@@ -9,16 +9,13 @@ For example,
    After removing the second node from the end, the linked list becomes 1->2->3->5.
 
  */
-
-public class RemoveNthNode {
-	
-
 class ListNode {
     int val;
     ListNode next;
     ListNode(int x) { val = x; }
 }
-	
+
+public class RemoveNthNode {		
 	/**
 	 * Definition for singly-linked list.
 	 * public class ListNode {
