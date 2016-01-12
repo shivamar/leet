@@ -66,14 +66,14 @@ to
 	}
 }
  
-class TreeNode
-{
-	TreeNode right;
-	TreeNode left;
-	int val;
- 
-	public TreeNode(int v)
-	{
-		val = v;
-	}
-}
+//class TreeNode
+//{
+//	TreeNode right;
+//	TreeNode left;
+//	int val;
+// 
+//	public TreeNode(int v)
+//	{
+//		val = v;
+//	}
+//}
