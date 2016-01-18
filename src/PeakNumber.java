@@ -1,4 +1,4 @@
-public class Solution {
+public class PeakNumber{
     /*
     A peak element is an element that is greater than its neighbors.
 
@@ -12,6 +12,11 @@ For example, in array [1, 2, 3, 1], 3 is a peak element and your function should
 
 
     */
+	
+	public static void main(String[] args)
+	{
+		
+	}
     public int findPeakElement(int[] nums) {
         if(nums == null) return 0;
         

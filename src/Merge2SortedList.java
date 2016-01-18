@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 /*
 tion for singly-linked list.
 
@@ -19,42 +23,29 @@ tion for singly-linked list.
 
  */
 
-public class Solution {
 
-    
-
+public class Merge2SortedList {	
     // k is number of list ; O(n) is n(logK); 100 list of size 10 each- 2000 is complexity
 
     public ListNode mergeKLists(ListNode[] lists) {
 
-        if(lists == null || lists.length == 0) return null; 
-
+        if(lists == null || lists.length == 0) return null;      
+		
+        Comparator<ListNode> comp = new ListNodeCompartor();
         
-
-        PriorityQueue<ListNode> pq = new PriorityQueue(lists.length, new Comparator<ListNode>(){
-
-           public int compare(ListNode a,ListNode b){
-
-                return a.val - b.val;
-
-           } 
-
-        });
-
+       PriorityQueue<ListNode> pq = new PriorityQueue(lists.length,comp);   //new Comparator<ListNode>{
+//        	public int compare(ListNode a,ListNode b){
+//                return a.val - b.val;
+//        });
+//        
         
 
         for(ListNode ls : lists){
-
             if(ls != null) pq.offer(ls);
-
         }
 
-        
-
         ListNode head =null,curr=null,iteratorNode=null;
-
         
-
         if(!pq.isEmpty()){
 
             iteratorNode = pq.remove();
@@ -254,6 +245,12 @@ public class Solution {
     public static void print(int v){
 
         System.out.println(v);
+
+    }
+
+    
+
+    public static void main(String[] args){
 
     }
 
