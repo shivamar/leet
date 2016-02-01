@@ -3,14 +3,14 @@ import java.util.Stack;
 
 public class PalindromeList {
 	
+	
     public boolean isPalindrome(ListNode head) {
-    	ListNode slow=head,fast=head;
-    	
+        ListNode slow=head,fast=head;
         Stack<Integer> stack = new Stack<>();
         
         while(fast !=null && fast.next != null)
         {
-            stack.push(slow);
+            stack.push(slow.val);//Integer.valueOf(slow.val));
             slow = slow.next;
             fast = fast.next.next;    
         }
@@ -18,18 +18,15 @@ public class PalindromeList {
         if(fast != null)
             slow = slow.next;
             
-        while(stack.isEmpty() && slow != null)
+        while(!stack.isEmpty() && slow != null)
         {
-            int val = stack.pop();
-            
-            if(val != slow.val) return false;
-            
+            int valu = stack.pop();
+            if(valu != slow.val) return false;
             slow = slow.next;
         }
         
         return true;
-    }
-	
+    }	
 	/**
 	 * Definition for singly-linked list.
 	 * public class ListNode {
