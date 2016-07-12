@@ -16,8 +16,8 @@ public class CountOnes {
     }
     
     //For every place in a digit, one occurs 10^currTenthPower-1 times every 10^(currentTenthPow).
-    //so calculate how many times [ 10^(currentTenthPow) ] are present in n n apply frmula [Math.pow(10, lowerPow) * prevQuo;]4
-    // and add the remainder of ones on that position
+    //so calculate how many times [ 10^(currentTenthPow) ] are present in n n apply frmula [Math.pow(10, lowerPow) * prevQuo;]
+    // and add the remainder of ones on that position ;  totalOnesInCurrPosition += (currPositionNumber > 1) ? (1 * Math.pow(10, lowerPow) ) : (currPositionNumber == 1 ? (remainder % Math.pow(10, lowerPow)) +1 : 0) ;    
     public int countDigitOne(int n, int currTenthPow, int result)
     {
         if(currTenthPow == 0) return result;
