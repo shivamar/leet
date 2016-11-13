@@ -41,7 +41,11 @@ public class NQueens {
         
     }
     
-    public String getString(int queenChar, int totalChar)
+    private boolean isValid(int n, int i, int row, List<String> solution) {		
+		return false;
+	}
+
+	public String getString(int queenChar, int totalChar)
     {
         StringBuilder strB = new StringBuilder(totalChar);
         
